@@ -1,5 +1,5 @@
 L=5000;  %length of the signal (miliseconds)
-Fs=4000;
+Fs=8000;
 
 mycomplex = fft(myRecording); %getting fft of my recording
 
