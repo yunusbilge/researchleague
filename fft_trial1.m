@@ -1,5 +1,6 @@
 filename = 'mydata.xlsx';
 myRecording = xlsread(filename,'B:B'); %taking the data from .xlsx file
+myRecording = myRecording(1:1280);
 L = length(myRecording);  %length of the signal (miliseconds)
 Fs = 25600;
 n = 2^nextpow2(L);
