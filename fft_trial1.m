@@ -1,5 +1,7 @@
-L=5000;  %length of the signal (miliseconds)
-Fs=8000;
+filename = 'mydata.xlsx';
+myRecording = xlsread(filename,'B:B'); %taking the data from .xlsx file
+L = length(myRecording);  %length of the signal (miliseconds)
+Fs = 25600;
 n = 2^nextpow2(L);
 mycomplex = fft(myRecording,n); %getting fft of my recording
 
